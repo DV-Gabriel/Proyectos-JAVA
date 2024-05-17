@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="rootC" prefHeight="400.0" prefWidth="600.0" stylesheets="@../Estilos/fondo1.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controlador.ServiciosController">
+   <children>
+      <Pane fx:id="subrootC" layoutY="32.0" prefHeight="468.0" prefWidth="536.0" style="-fx-border-color: white;" stylesheets="@../Estilos/fondo1.css" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="45.0" AnchorPane.rightAnchor="45.0" AnchorPane.topAnchor="20.0">
+         <children>
+            <Label layoutX="60.0" layoutY="120.0" text="Sotfware:" textFill="WHITE">
+               <font>
+                  <Font name="SansSerif Bold" size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="100.0" layoutY="25.0" prefHeight="75.0" prefWidth="126.0" text="Servicios" textFill="WHITE" wrapText="true">
+               <font>
+                  <Font name="SansSerif Bold" size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="60.0" layoutY="180.0" text="Hardware:" textFill="WHITE">
+               <font>
+                  <Font name="SansSerif Bold" size="24.0" />
+               </font>
+            </Label>
+            <Button fx:id="ejecutar2" layoutX="245.0" layoutY="180.0" mnemonicParsing="false" onAction="#actionEjecutarHardware" style="-fx-background-color: #a8dcfb;" text="Ejecutar" textFill="#013440">
+               <font>
+                  <Font name="SansSerif Regular" size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="ejecutar1" layoutX="245.0" layoutY="120.0" mnemonicParsing="false" onAction="#actionEjecutarSotfware" style="-fx-background-color: #a8dcfb;" text="Ejecutar">
+               <font>
+                  <Font name="SansSerif Regular" size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="salir" layoutX="138.0" layoutY="240.0" mnemonicParsing="false" onAction="#actionSalir" prefHeight="36.0" prefWidth="191.0" style="-fx-background-color: #a8dcfb;" text="Salir" textFill="#013440">
+               <font>
+                  <Font name="SansSerif Regular" size="20.0" />
+               </font>
+            </Button>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

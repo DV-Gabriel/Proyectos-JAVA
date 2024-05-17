@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controlador.ControladoresHard.EnfriamientoController">
+    <children>
+        <Pane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #023373;">
+            <children>
+                <Label layoutX="347.0" layoutY="239.0" text="Potencia" textFill="WHITE">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </Label>
+                <Label layoutX="347.0" layoutY="173.0" text="Rejillas" textFill="WHITE">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </Label>
+                <Label layoutX="88.0" layoutY="252.0" text="IMPORTANTE" textFill="WHITE">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </Label>
+                <Label layoutX="374.0" layoutY="120.0" text="Verificación" textFill="WHITE">
+                    <font>
+                        <Font size="20.0" />
+                    </font>
+                </Label>
+                <Label layoutX="88.0" layoutY="43.0" text="Mantenimiento del sistema de enfriamiento" textFill="WHITE">
+                    <font>
+                        <Font size="22.0" />
+                    </font>
+                </Label>
+                <CheckBox fx:id="checkRejillas" layoutX="465.0" layoutY="174.0" mnemonicParsing="false">
+                    <font>
+                        <Font size="15.0" />
+                    </font>
+                </CheckBox>
+                <CheckBox fx:id="checkPotencia" layoutX="465.0" layoutY="240.0" mnemonicParsing="false">
+                    <font>
+                        <Font size="15.0" />
+                    </font>
+                </CheckBox>
+                <Label layoutX="112.0" layoutY="120.0" text="Estado" textFill="WHITE">
+                    <font>
+                        <Font size="20.0" />
+                    </font>
+                </Label>
+                <Label layoutX="68.0" layoutY="173.0" text="Apagar" textFill="WHITE">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </Label>
+                <CheckBox fx:id="checkEstado" layoutX="171.0" layoutY="178.0" mnemonicParsing="false" prefWidth="22.0">
+                    <font>
+                        <Font size="15.0" />
+                    </font>
+                </CheckBox>
+                <Label layoutX="52.0" layoutY="299.0" text="Recuerde apagar el sistema de" textFill="WHITE">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </Label>
+                <Label layoutX="52.0" layoutY="319.0" text="enfriamiento unicamente cuando sea" textFill="WHITE">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </Label>
+                <Label layoutX="51.0" layoutY="339.0" text="necesario y con la previa autorizacion" textFill="WHITE">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </Label>
+            <Button layoutX="389.0" layoutY="317.0" mnemonicParsing="false" onAction="#guardarEnArchivo" text="Guardar" />
+            </children>
+        </Pane>
+    </children>
+</AnchorPane>

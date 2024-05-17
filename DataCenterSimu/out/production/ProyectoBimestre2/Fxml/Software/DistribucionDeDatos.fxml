@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #eeeee;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controlador.ControladoresSoft.DistribucionDeDatosController">
+    <children>
+        <Pane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #88b4be;">
+            <children>
+                <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#c3e4e7" height="400.0" stroke="#c3e4e7" strokeType="INSIDE" width="227.0" />
+                <Label layoutX="21.0" layoutY="135.0" prefHeight="51.0" prefWidth="185.0" text="Distribución de ">
+                    <font>
+                        <Font name="Inter Semi Bold" size="24.0" />
+                    </font>
+                </Label>
+                <CheckBox fx:id="replicacion" layoutX="246.0" layoutY="61.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="153.0" style="-fx-background-color: #88b4be;" text="Replicacion de datos" textFill="#023653">
+                    <font>
+                        <Font name="Inter Semi Bold" size="12.0" />
+                    </font>
+                </CheckBox>
+                <CheckBox fx:id="balanceo" layoutX="245.0" layoutY="146.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="139.0" style="-fx-background-color: #88b4be;" text="Balanceo de carga " textFill="#023653">
+                    <font>
+                        <Font name="Inter Semi Bold" size="12.0" />
+                    </font>
+                </CheckBox>
+                <CheckBox fx:id="particionamiento" layoutX="246.0" layoutY="235.0" mnemonicParsing="false" text="Particionamiento de datos" textFill="#023653">
+                    <font>
+                        <Font name="Inter Semi Bold" size="12.0" />
+                    </font>
+                </CheckBox>
+                <CheckBox fx:id="virtualizacion" layoutX="246.0" layoutY="277.0" mnemonicParsing="false" text="Virtualización de recursos" textFill="#023653">
+                    <font>
+                        <Font name="Inter Semi Bold" size="12.0" />
+                    </font>
+                </CheckBox>
+            <Label layoutX="76.0" layoutY="177.0" prefHeight="30.0" prefWidth="93.0" text="Datos">
+               <font>
+                  <Font name="Inter Semi Bold" size="24.0" />
+               </font>
+            </Label>
+            <CheckBox fx:id="almacenamientoDis" layoutX="246.0" layoutY="106.0" mnemonicParsing="false" text="Almacenamiento distribuido " textFill="#023653">
+               <font>
+                  <Font name="Inter Semi Bold" size="12.0" />
+               </font></CheckBox>
+            <CheckBox fx:id="almacenamientoCach" layoutX="245.0" layoutY="192.0" mnemonicParsing="false" text="Almacenamiento en caché" textFill="#023653">
+               <font>
+                  <Font name="Inter Semi Bold" size="12.0" />
+               </font></CheckBox>
+            <Button layoutX="296.0" layoutY="320.0" mnemonicParsing="false" onAction="#guardarEnArchivo" text="Guardar" textFill="#023653">
+               <font>
+                  <Font name="Inter Semi Bold" size="12.0" />
+               </font>
+            </Button>
+            </children>
+        </Pane>
+    </children>
+</AnchorPane>

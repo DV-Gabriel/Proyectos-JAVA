@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controlador.ControladoresHard.RackController">
+    <children>
+        <Pane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #023373;">
+            <children>
+                <Label layoutX="86.0" layoutY="59.0" text="Mantenimiento y limpieza de los racks del DataCenter" textFill="WHITE">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </Label>
+                <Label layoutX="101.0" layoutY="200.0" text="Limpieza del suelo técnico" textFill="WHITE">
+                    <font>
+                        <Font size="16.0" />
+                    </font>
+                </Label>
+                <Label layoutX="101.0" layoutY="136.0" text="Limpieza exterior" textFill="WHITE">
+                    <font>
+                        <Font size="16.0" />
+                    </font>
+                </Label>
+                <Label layoutX="102.0" layoutY="273.0" text="Limpieza interior" textFill="WHITE">
+                    <font>
+                        <Font size="16.0" />
+                    </font>
+                </Label>
+                <CheckBox fx:id="checkLimpiezaExt" layoutX="411.0" layoutY="139.0" mnemonicParsing="false" prefHeight="9.0" prefWidth="10.0" />
+                <CheckBox fx:id="checkLimpiezaSuelo" layoutX="412.0" layoutY="202.0" mnemonicParsing="false" />
+                <CheckBox fx:id="checkLimpiezaInt" layoutX="411.0" layoutY="277.0" mnemonicParsing="false" />
+                <Button fx:id="solicitudLimpieza" layoutX="233.0" layoutY="338.0" mnemonicParsing="false" onAction="#guardarEnArchivo" text="Enviar solicitud">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </Button>
+            </children>
+        </Pane>
+    </children>
+</AnchorPane>

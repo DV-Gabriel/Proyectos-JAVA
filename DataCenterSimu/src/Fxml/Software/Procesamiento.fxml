@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #eeeee;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controlador.ControladoresSoft.ProcesamientoController">
+    <children>
+        <Pane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #88b4be;">
+            <children>
+                <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#c3e4e7" height="400.0" stroke="#c3e4e7" strokeType="INSIDE" width="227.0" />
+                <Label layoutX="23.0" layoutY="151.0" text="Procesamiento ">
+                    <font>
+                        <Font name="Inter Semi Bold" size="24.0" />
+                    </font>
+                </Label>
+                <CheckBox fx:id="nube" layoutX="256.0" layoutY="78.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="220.0" style="-fx-background-color: #88b4be;" text="Procesamiento en la nube" textFill="#023653">
+                    <font>
+                        <Font name="Inter Semi Bold" size="12.0" />
+                    </font>
+                </CheckBox>
+                <CheckBox fx:id="ia" layoutX="256.0" layoutY="121.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="249.0" style="-fx-background-color: #88b4be;" text="Procesamiento por IA" textFill="#023653">
+                    <font>
+                        <Font name="Inter Semi Bold" size="12.0" />
+                    </font>
+                </CheckBox>
+                <CheckBox fx:id="analisis" layoutX="256.0" layoutY="166.0" mnemonicParsing="false" text="Procesamiento de análisis de datos" textFill="#023653">
+                    <font>
+                        <Font name="Inter Semi Bold" size="12.0" />
+                    </font>
+                </CheckBox>
+                <CheckBox fx:id="virtualizacion" layoutX="256.0" layoutY="206.0" mnemonicParsing="false" text="Virtualización" textFill="#023653">
+                    <font>
+                        <Font name="Inter Semi Bold" size="12.0" />
+                    </font>
+                </CheckBox>
+                <CheckBox fx:id="app" layoutX="256.0" layoutY="244.0" mnemonicParsing="false" text="Procesamiento de aplicaciones" textFill="#023653">
+                    <font>
+                        <Font name="Inter Semi Bold" size="12.0" />
+                    </font>
+                </CheckBox>
+            <Label layoutX="28.0" layoutY="192.0" text="Seleccione los metodos usados: " />
+            <Button layoutX="332.0" layoutY="291.0" mnemonicParsing="false" onAction="#guardarArchivo" text="Guardar" textFill="#023653">
+               <font>
+                  <Font name="Inter Semi Bold" size="12.0" />
+               </font>
+            </Button>
+            </children>
+        </Pane>
+    </children>
+</AnchorPane>

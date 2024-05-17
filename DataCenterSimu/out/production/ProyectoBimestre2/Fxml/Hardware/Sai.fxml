@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controlador.ControladoresHard.SaiController">
+    <children>
+        <Pane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #023373;">
+            <children>
+                <Label layoutX="61.0" layoutY="47.0" text="Mantenimiento del sistema de alimentación ininterrumpida" textFill="WHITE">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </Label>
+                <Label layoutX="57.0" layoutY="121.0" text="Comprobación de potencia" textFill="WHITE">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </Label>
+                <Label layoutX="326.0" layoutY="121.0" text="Revisión de los bancos de batería" textFill="WHITE">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </Label>
+                <Label layoutX="42.0" layoutY="175.0" text="Filtros" textFill="WHITE">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </Label>
+                <Label layoutX="42.0" layoutY="222.0" text="Ventiladores y refrigeradores" textFill="WHITE">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </Label>
+                <Label layoutX="41.0" layoutY="280.0" text="Transformadores y amortiguadores" textFill="WHITE">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </Label>
+                <Label layoutX="337.0" layoutY="173.0" text="Voltaje" textFill="WHITE">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </Label>
+                <Label layoutX="339.0" layoutY="221.0" text="Corriente" textFill="WHITE">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </Label>
+                <Label layoutX="337.0" layoutY="279.0" text="Prueba de descarga controladabel" textFill="WHITE">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </Label>
+                <CheckBox fx:id="checkFiltros" layoutX="268.0" layoutY="174.0" mnemonicParsing="false" textFill="WHITE">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </CheckBox>
+                <CheckBox fx:id="checkVentilador" layoutX="268.0" layoutY="221.0" mnemonicParsing="false" textFill="WHITE">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </CheckBox>
+                <CheckBox fx:id="checkAmortiguador" layoutX="269.0" layoutY="279.0" mnemonicParsing="false" textFill="WHITE">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </CheckBox>
+                <CheckBox fx:id="checkVoltaje" layoutX="557.0" layoutY="174.0" mnemonicParsing="false" textFill="WHITE">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </CheckBox>
+                <CheckBox fx:id="checkCorriente" layoutX="556.0" layoutY="222.0" mnemonicParsing="false" textFill="WHITE">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </CheckBox>
+                <CheckBox fx:id="checkPrueba" layoutX="556.0" layoutY="279.0" mnemonicParsing="false" textFill="WHITE">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </CheckBox>
+                <Button fx:id="btnComprobar" layoutX="225.0" layoutY="348.0" mnemonicParsing="false" onAction="#guardarEnArchivo" text="Comprobar funcionamiento">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </Button>
+                <Separator layoutX="54.0" layoutY="138.0" prefHeight="5.0" prefWidth="172.0" />
+                <Separator layoutX="326.0" layoutY="136.0" prefHeight="8.0" prefWidth="207.0" />
+            </children>
+        </Pane>
+    </children>
+</AnchorPane>
